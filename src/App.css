@@ -56,6 +56,7 @@ input[type="file" i]{
 .box-image, .box-result{
   padding: 20px;
   background-color: #90a3bd;
+  text-transform: capitalize;
 }
 
 .alert{
