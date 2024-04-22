@@ -12,23 +12,59 @@ body{
 
 .App{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .heading{
   margin-bottom: 50px;
 }
 
-.input-wrapper label{
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.input-wrapper label {
   display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.input-wrapper label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+input[type="file" i]{
+  background-color: #CFE2FF;
 }
 
 .result{
   display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  gap: 20px;
 }
 
 .box-image, .box-result{
-  display: block;
   padding: 20px;
-  background-color: orange;
+  background-color: #a6bad7;
 }
+
+
 
