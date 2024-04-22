@@ -41,6 +41,7 @@ Button{
 
 input[type="file" i]{
   background-color: #CFE2FF;
+  color: #000;
 }
 
 .result{
@@ -53,7 +54,7 @@ input[type="file" i]{
 
 .box-image, .box-result{
   padding: 20px;
-  background-color: #a6bad7;
+  background-color: #90a3bd;
 }
 
 .alert{
