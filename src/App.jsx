@@ -25,6 +25,11 @@ function App() {
   const copyText = () => {
     setShowAlert(true);
   };
+  const resetValues = () => {
+    setSelectedImage(null);
+    setTextResult("");
+    setShowAlert(false);
+  };
 
   useEffect(() => {
     if (selectedImage) {
@@ -35,7 +40,7 @@ function App() {
     <>
       <div className="heading">
         <h1>Image To Text Converter</h1>
-        <p>Translate words into image within seconds!</p>
+        <p>Translate words into image within seconds for free!</p>
       </div>
 
       <div className="App">
@@ -68,6 +73,10 @@ function App() {
                   Copy Text
                 </Button>
               </CopyToClipboard>
+
+              <Button variant="danger" onClick={resetValues}>
+                Reset
+              </Button>
             </div>
           )}
         </div>
