@@ -59,7 +59,7 @@ function App() {
             <div className="box-image">
               <img
                 src={URL.createObjectURL(selectedImage)}
-                width="70%"
+                width="40%"
                 alt="thumbmnail"
               />
             </div>
