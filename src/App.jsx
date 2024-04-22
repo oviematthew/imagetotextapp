@@ -38,7 +38,7 @@ function App() {
     <>
       <div className="heading">
         <h1>Image To Text Converter</h1>
-        <p>Translate words in an image to text within seconds for free!</p>
+        <p>Translate words in an image to text within seconds.</p>
       </div>
 
       <div className="App">
