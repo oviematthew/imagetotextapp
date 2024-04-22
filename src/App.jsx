@@ -40,7 +40,7 @@ function App() {
     <>
       <div className="heading">
         <h1>Image To Text Converter</h1>
-        <p>Translate words into image within seconds for free!</p>
+        <p>Translate words in an image to text within seconds for free!</p>
       </div>
 
       <div className="App">
@@ -54,17 +54,19 @@ function App() {
           />
         </div>
 
-        <div className="result">
-          {selectedImage && (
-            <div className="box-image">
-              <img
-                src={URL.createObjectURL(selectedImage)}
-                width="40%"
-                alt="thumbmnail"
-              />
-            </div>
-          )}
+        {showAlert && (
+          <div className="alert">
+            <Alert
+              variant="primary"
+              onClose={() => setShowAlert(false)}
+              dismissible
+            >
+              Text copied to clipboard!
+            </Alert>
+          </div>
+        )}
 
+        <div className="result">
           {textResult && (
             <div className="box-result">
               <p>{textResult}</p>
@@ -79,18 +81,17 @@ function App() {
               </Button>
             </div>
           )}
+
+          {selectedImage && (
+            <div className="box-image">
+              <img
+                src={URL.createObjectURL(selectedImage)}
+                width="40%"
+                alt="thumbmnail"
+              />
+            </div>
+          )}
         </div>
-        {showAlert && (
-          <div className="alert">
-            <Alert
-              variant="primary"
-              onClose={() => setShowAlert(false)}
-              dismissible
-            >
-              Text copied to clipboard!
-            </Alert>
-          </div>
-        )}
       </div>
     </>
   );
