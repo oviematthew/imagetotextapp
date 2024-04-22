@@ -48,7 +48,8 @@ input[type="file" i]{
   display: flex;
   flex-direction: column;
   max-width: 80%;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
   gap: 20px;
 }
 
@@ -58,7 +59,7 @@ input[type="file" i]{
 }
 
 .alert{
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 

@@ -26,9 +26,7 @@ function App() {
     setShowAlert(true);
   };
   const resetValues = () => {
-    setSelectedImage(null);
-    setTextResult("");
-    setShowAlert(false);
+    window.location.reload();
   };
 
   useEffect(() => {
